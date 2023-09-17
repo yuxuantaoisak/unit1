@@ -1,0 +1,24 @@
+def cipher(input_string):
+
+    alphabet=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    input_string=str(input_string)
+    input_string=input_string.lower()
+    result=""
+
+    for i in range(0,len(input_string)):
+        unshifted=input_string[i]
+
+        if unshifted not in alphabet:
+            result+=unshifted
+        else:
+            position=alphabet.index(unshifted)
+            new_position=(position+13)%26
+            result+=alphabet[new_position]
+
+
+
+    return result
+
+a=input("Please enter the message: ")
+b=cipher(a)
+print(b)
