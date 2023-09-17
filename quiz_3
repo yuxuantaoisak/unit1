@@ -1,0 +1,19 @@
+def translation(dna):
+    translated= ("")
+    for i in dna:
+        if i=="A":
+            translated="T"
+        elif i=="T":
+            translated="A"
+        elif i=="G":
+            translated="C"
+        elif i=="C":
+            translated="G"
+    return translated
+
+a=str(input("Please enter the DNA sequence: "))
+a=a.upper()
+output=translation(a)
+print(output)
+
+
