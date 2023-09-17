@@ -1,0 +1,10 @@
+import random
+count=0
+
+while True:
+    a=random.randint(1,100)
+    count+=1
+    if a<=15:
+        break
+
+print(f"It took {count} attempt(s) to generate a random number less than or equal to 15.")
