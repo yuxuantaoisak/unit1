@@ -1,0 +1,24 @@
+def blackbox(original):
+
+    original=str(original)
+    lt_split=original.split(" ")
+    i_count=len(lt_split)
+    str_out=""
+
+    for i in range(0,i_count):
+
+        first_char=lt_split[i][0]
+        last_char=lt_split[i][len(lt_split[i])-1]
+
+        if len(lt_split[i])-2==0:
+            str_out+=" "+first_char+last_char
+        elif len(lt_split[i])-1==0:
+            str_out+=" "+first_char+" "
+        else:
+            str_out+=" "+first_char+str(len(lt_split[i])-2)+last_char+" "
+
+    return str_out
+
+a=input("Please enter the value: ")
+str_out=blackbox(a)
+print(str_out,end=" ")
