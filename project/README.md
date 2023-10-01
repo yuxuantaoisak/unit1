@@ -48,7 +48,27 @@ Some main features of the product include: deposit and withdrawal, balance check
 
 ## System diagram
 
-![Screenshot 2023-09-14 at 0.19.00]
+![Screenshot 2023-09-14 at 0 19 00](https://github.com/yuxuantaoisak/unit1/assets/144768397/745f50a4-b2d7-4703-aa6d-165cba6dd46c)
 
 
-## Flow diagram
+## Flow diagrams
+
+<img width="1034" alt="Screenshot 2023-10-02 at 8 36 54" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/6f3285e8-3c25-4a1f-b8f2-8bf78c6ecc20">
+**Fig. 1**
+
+<img width="1117" alt="Screenshot 2023-10-02 at 8 47 42" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/b5a58e5d-23dd-48fc-b7d4-4ab0ed16fe58">
+**Fig. 2**
+
+
+## Record of tasks
+
+| Task No | Planned Action            | Planned Outcome                                                                                           | Time estimate | Target completion date | Criterion |
+|---------|---------------------------|-----------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
+| 1       | Finish proposed solution  | An explanation of why the product is being developed                                                      | 10min         | Sep 14                 | A         |
+| 2       | Create a login system     | A flow diagram and the code for login                                                                     | 30min         | Sep 14                 | B,C       |
+| 3       | Create success criteria   | To have a list of criteria that can used to evaluate the final product                                    | 20min         | Sep 19                 | A         |
+| 5       | Create an ATM machine     | A flow diagram and code for an ATM machine system                                                         | 40min         | Sep 20                 | B,C       |
+| 4       | Create system diagram     | To have a clear idea of the hardware and software requirements for the  proposed solution                 | 10min         | Sep 24                 | B         |
+| 6       | Create a test plan        | Have the code tested to see if it aligns with the success criteria and  has the described functionalities | 30min         | Sep 29                 | B         |
+| 7       | Create citation for codes | A complete citation on sources used throughout the development of the product                             | 20min         | Sep 29                 | C         |
+| 8       |                           |                                                                                                           |               |                        |           |
