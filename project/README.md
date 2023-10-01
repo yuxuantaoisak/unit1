@@ -16,6 +16,7 @@ Apart from these requirements, Tseten Lama is open to explore a cryptocurrency s
 
 Design statement: I will design and make an **electronic ledger** for a client who is **Tseten Lama**. The **electronic ledger** will be **a software that helps the client to withdraw and transfer money and track spendings** and is constructed using the software **PyCharm**. It will take **four weeks** to make and will be evaluated according to the criteria **A, B, and C**.
 
+Introduction to the cryptocurrency:
 Monero (XMR) is a privacy-focused cryptocurrency that was created in 2014. It is designed to provide enhanced privacy and anonymity for its users compared to other cryptocurrencies like Bitcoin. Monero achieves this privacy through various cryptographic techniques, including Stealth Addresses, Ring Signature, and Ring CT. This ensures that the sender, the receiver and the amount of transaction are all hidden by default. 
 
 
