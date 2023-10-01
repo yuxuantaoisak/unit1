@@ -41,7 +41,7 @@ Some main features of the product include: deposit and withdrawal, balance check
 
 5.The electronic ledger shows the real time conversion rates from the cryptocurrency to other major currencies in the world (yen, usd, eur). 
 
-6.The electronic ledger has an address book to make it more convenient to send money and reduce errors when typing in address manually (edit and delete).
+6.The electronic ledger has an address book to make it more convenient  send money and reduce errors when typing in address manually (edit and delete).
 
 
 # Criteria B: Design
@@ -54,10 +54,10 @@ Some main features of the product include: deposit and withdrawal, balance check
 ## Flow diagrams
 
 <img width="1034" alt="Screenshot 2023-10-02 at 8 36 54" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/6f3285e8-3c25-4a1f-b8f2-8bf78c6ecc20">
-**Fig. 1**
+**Fig. 2** This is the basic procedure for login. 
 
 <img width="1117" alt="Screenshot 2023-10-02 at 8 47 42" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/b5a58e5d-23dd-48fc-b7d4-4ab0ed16fe58">
-**Fig. 2**
+**Fig. 3** This is the flow diagram for my login system. 
 
 
 ## Record of tasks
