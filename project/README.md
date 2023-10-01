@@ -48,6 +48,6 @@ Some main features of the product include: deposit and withdrawal, balance check
 
 ## System diagram
 
-![](Screenshot 2023-09-14 at 0.19.00)
+![Screenshot 2023-09-14 at 0.19.00]
 
 ## Flow diagram
