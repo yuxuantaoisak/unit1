@@ -30,3 +30,17 @@ Some main features of the product include: deposit and withdrawal, balance check
 
 
 ## Success criteria
+
+1.The electronic ledger is a text-based software (Runs in the Terminal).
+2.The electronic ledger display the basic description of the cyrptocurrency selected.
+3.The electronic ledger allows to enter, withdraw and record transactions.
+4.The electronic ledger shows the past transaction records (deposit, withdrawal, etc) in tables or graphs. 
+5.The electronic ledger shows the real time conversion rates from the cryptocurrency to other major currencies in the world (yen, usd, eur). 
+6.The electronic ledger has an address book to make it more convenient to send money and reduce errors when typing in address manually (edit and delete).
+
+
+# Criteria B: Design
+
+## System diagram
+
+## Flow diagram
