@@ -65,8 +65,6 @@ Some main features of the product include: deposit and withdrawal, balance check
 
 
 
-
-
 <img width="1117" alt="Screenshot 2023-10-02 at 8 47 42" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/b5a58e5d-23dd-48fc-b7d4-4ab0ed16fe58">
 
 **Fig. 3** This is the flow diagram for my login system. 
@@ -76,6 +74,14 @@ Some main features of the product include: deposit and withdrawal, balance check
 <img width="524" alt="Screenshot 2023-10-02 at 20 34 08" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/bc05aa71-bf56-4f01-bc68-df5945544bc6">
 
 **Fig. 4** This is the flow diagram for option 4 (graph) in atm. 
+
+
+
+<img width="735" alt="Screenshot 2023-10-02 at 20 51 55" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/bed43b13-fd60-4cc8-ae27-5638387feaa4">
+
+**Fig. 5** This is the flow diagram for option 6 (address book) in atm. 
+
+
 
 
 
@@ -122,7 +128,7 @@ The test plan gives an idea of how the program will be tested as well as an over
 
 My client requires a system to protect the private data. I thought about using a login system to accomplish this requirement using a if condition and the open command to work with a csv file. 
 
-A you can see in the flow diagram in **Fig 3**, in th first line I am defining a function called try_login, this function has two inputs of type string, and the output is a boolean representing True if the
+A you can see in the flow diagram in **Fig. 3**, in th first line I am defining a function called try_login, this function has two inputs of type string, and the output is a boolean representing True if the
 user logins correctly or false otherwise. This is saved in the variable logged_in. Then in line two, I used the open function to open the csv file named 'users.csv' and used readlines function to access all the usernames and passwords. After that, I initialized the logged_in function as False and used a for loop to define 'uname' 
 and 'upass' in the file. If username and password are identical as in the users.csv file, the logged_in function becomes True, and it's the end of the program. 
 
@@ -229,7 +235,7 @@ When the value of the variable option is 4, as you can see in **Fig. 4**, I init
 
 When the value of the variable option is 5, I used a while true loop. I defined the currency_type function as the user input, as they can be either Yen, US Dollar or Euro, and I used the upper() funciton to make sure that the input will be translated into upper case. If the input is USD, the website that contains real time conversion rates(stored in the variable rate) will be printed since it's always fluctuating, and the user will be asked to input the amount of cryptocurrency they want to check which will be stored in the variable int_amount. The two variables will be multiplied and the result will be printed, as the while loop is stopped by break function. The same procedure applies to two other currencies. When the user inputs none of these currency, they will be asked to reenter, which is the feedback.
 
-When the value of the variable option is 6, a sub-menu will be printed which includes the basic features of the address book: check, add and delete address. I set the initial value of the variable option as -1, which represents all the values that are not in the options so that it satisfies the conditions of the while loop next line. The number of option that the user inputs will be verified by the function validate_int_user. If the option is 1, the open function will open the address book csv file and the for function was used to print all the lines. If the option is 2, the open function will open the address book csv file and the user will be asked to input the address and the description of it, which are stored respectively in the variable msg_address and msg_notes. Two variables will be integrated into one variable called address, and stored into the address book csv file using the writelines() function. If the option is 3, the address book csv file will be read using the padas plugin which is a file reader. The address book will be first printed with index in front of each line. Then, the try block was used as a test for the following lines. Then, the user will be asked to enter the line they want to delete, which will be stored into the variable row_to_delete. If the input is valid, the drop function from the pandas package will be used to delete the chosen line. The edited variable data will be printed again to show the user the edited version after which it will be stored into the csv file. If the value the user entered as they option is invalid(less than 0 or bigger than the number of lines of the file), the system will display "Invalid input. Please enter a valid number." as the feedback to the user. 
+When the value of the variable option is 6, a sub-menu will be printed which includes the basic features of the address book: check, add and delete address as shown in **Fig. 5**. I set the initial value of the variable option as -1, which represents all the values that are not in the options so that it satisfies the conditions of the while loop next line. The number of option that the user inputs will be verified by the function validate_int_user. If the option is 1, the open function will open the address book csv file and the for function was used to print all the lines. If the option is 2, the open function will open the address book csv file and the user will be asked to input the address and the description of it, which are stored respectively in the variable msg_address and msg_notes. Two variables will be integrated into one variable called address, and stored into the address book csv file using the writelines() function. If the option is 3, the address book csv file will be read using the padas plugin which is a file reader. The address book will be first printed with index in front of each line. Then, the try block was used as a test for the following lines. Then, the user will be asked to enter the line they want to delete, which will be stored into the variable row_to_delete. If the input is valid, the drop function from the pandas package will be used to delete the chosen line. The edited variable data will be printed again to show the user the edited version after which it will be stored into the csv file. If the value the user entered as they option is invalid(less than 0 or bigger than the number of lines of the file), the system will display "Invalid input. Please enter a valid number." as the feedback to the user. 
 
 When the value of the variable option is 7, the open function was used to open the monero introduction csv file. After opening the file, the for loop was used to print every line in the file, while the end operator was used to indicate the end of a string output, which, in this case, is to put the content in the file in lines. 
 
