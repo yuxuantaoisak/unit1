@@ -49,6 +49,7 @@ Some main features of the product include: deposit and withdrawal, balance check
 ## System diagram
 
 ![Screenshot 2023-10-02 at 19 43 48](https://github.com/yuxuantaoisak/unit1/assets/144768397/a352b3d4-a792-4975-afcc-e06cfa7b9c2c)
+
 **Fig. 1** This is the system diagram. 
 
 
@@ -69,6 +70,13 @@ Some main features of the product include: deposit and withdrawal, balance check
 <img width="1117" alt="Screenshot 2023-10-02 at 8 47 42" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/b5a58e5d-23dd-48fc-b7d4-4ab0ed16fe58">
 
 **Fig. 3** This is the flow diagram for my login system. 
+
+
+
+<img width="524" alt="Screenshot 2023-10-02 at 20 34 08" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/bc05aa71-bf56-4f01-bc68-df5945544bc6">
+
+**Fig. 4** This is the flow diagram for option 4 (graph) in atm. 
+
 
 
 ## Record of tasks
@@ -217,7 +225,7 @@ When the value of the variable option is 2, similarly, the user will be asked to
 
 When the value of the variable option is 3, the open function will open the atm csv file, and the readlines() function will read all lines. The for loop in the following line adds up all the amount stored in the file, including positive ones(deposit) and negative ones(withdrawal), which is the balance that will be printed using the banner function.
 
-When the value of the variable option is 4, I initialized two functions, in_money and out_money with the initial value of 0. I used open function to open the atm csv file and readlines() function to read all lines. The int function will first make sure that the amount is an integer, then I used a for loop to identify the amount in the file. An if function was then used to identify whether the amount is positive or negative. If the amount is positive, the amount will be added to the in_money variable; if it's negative, the amount will be multiplied by -1 to make it positive and added to the out_money variable. After these operations were done, the two variables will be floor divided and squares were used to represent the variables. A squre represents roughly 1000 units. Finally, the graph will be printed. 
+When the value of the variable option is 4, as you can see in **Fig. 4**, I initialized two functions, in_money and out_money with the initial value of 0. I used open function to open the atm csv file and readlines() function to read all lines. The int function will first make sure that the amount is an integer, then I used a for loop to identify the amount in the file. An if function was then used to identify whether the amount is positive or negative. If the amount is positive, the amount will be added to the in_money variable; if it's negative, the amount will be multiplied by -1 to make it positive and added to the out_money variable. After these operations were done, the two variables will be floor divided and squares were used to represent the variables. A squre represents roughly 1000 units. Finally, the graph will be printed. 
 
 When the value of the variable option is 5, I used a while true loop. I defined the currency_type function as the user input, as they can be either Yen, US Dollar or Euro, and I used the upper() funciton to make sure that the input will be translated into upper case. If the input is USD, the website that contains real time conversion rates(stored in the variable rate) will be printed since it's always fluctuating, and the user will be asked to input the amount of cryptocurrency they want to check which will be stored in the variable int_amount. The two variables will be multiplied and the result will be printed, as the while loop is stopped by break function. The same procedure applies to two other currencies. When the user inputs none of these currency, they will be asked to reenter, which is the feedback.
 
