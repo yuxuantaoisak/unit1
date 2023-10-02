@@ -48,20 +48,26 @@ Some main features of the product include: deposit and withdrawal, balance check
 
 ## System diagram
 
-![Screenshot 2023-09-14 at 0 19 00](https://github.com/yuxuantaoisak/unit1/assets/144768397/745f50a4-b2d7-4703-aa6d-165cba6dd46c)
-
+![Screenshot 2023-10-02 at 19 43 48](https://github.com/yuxuantaoisak/unit1/assets/144768397/a352b3d4-a792-4975-afcc-e06cfa7b9c2c)
 **Fig. 1** This is the system diagram. 
+
+
+
 
 
 
 ## Flow diagrams
 
 <img width="1034" alt="Screenshot 2023-10-02 at 8 36 54" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/6f3285e8-3c25-4a1f-b8f2-8bf78c6ecc20">
+
 **Fig. 2** This is the basic procedure for login. 
 
 
 
+
+
 <img width="1117" alt="Screenshot 2023-10-02 at 8 47 42" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/b5a58e5d-23dd-48fc-b7d4-4ab0ed16fe58">
+
 **Fig. 3** This is the flow diagram for my login system. 
 
 
