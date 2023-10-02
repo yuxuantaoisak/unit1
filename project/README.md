@@ -85,6 +85,16 @@ Some main features of the product include: deposit and withdrawal, balance check
 
 
 
+## UI sketches
+
+<img width="628" alt="Screenshot 2023-10-02 at 21 15 37" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/30aa4600-e933-45aa-be16-88c953387035">
+
+**Fig. 6**
+
+
+
+
+
 ## Record of tasks
 
 | Task No | Planned Action            | Planned Outcome                                                                                           | Time estimate | Target completion date | Criterion |
