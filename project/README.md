@@ -142,7 +142,7 @@ A you can see in the flow diagram in **Fig. 3**, in th first line I am defining 
 user logins correctly or false otherwise. This is saved in the variable logged_in. Then in line two, I used the open function to open the csv file named 'users.csv' and used readlines function to access all the usernames and passwords. After that, I initialized the logged_in function as False and used a for loop to define 'uname' 
 and 'upass' in the file. If username and password are identical as in the users.csv file, the logged_in function becomes True, and it's the end of the program. 
 
-I defined a variable called 'attempts' with the initial value of 3, meaning that there are 3 chances for the user to enter password. When username or password are incorrect, the user will be given the chance, and the 'attempt' variable will be reduced. 
+I defined a variable called 'attempts' with the initial value of 3, meaning that there are 3 chances for the user to enter password. When the username or password is incorrect, the user will be given the chance, and the 'attempt' variable will be reduced. 
 
 If the password is still incorrect after 3 trials, the user will not be authorized into the program. Otherwise, they can enter the program.
 
