@@ -130,7 +130,12 @@ else:
 
 ## ATM machine
 
-My client needs a software that allows him to deposit, withdraw, check balance, and keep track of records of transaction. I thought that a program that imitates an ATM machine in real life would achieve all of these functions. 
+My client needs a software that allows him to deposit, withdraw, check balance, and keep track of records of transaction. I thought that a program that imitates an ATM machine in real life would achieve all of these functions. The main functions of the ATM machine include: deposit, withdraw, balance checking, graph, conversion rates, address book, and learn more about the cryptocurrency (XMR). These main functions
+were designed in order to fulfil the success criteria listed above. 
+
+I first imported some python packages and functions defined in a document named my_lib to help with ceratin graphings, menu, and user validation process. After that, I designed the banner and menu using the functions imported. 
+
+First, I set the initial value of 
 
 
 ```.py
