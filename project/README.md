@@ -111,7 +111,9 @@ My client requires a system to protect the private data. I thought about using a
 A you can see in the flow diagram in **Fig 3**, in th first line I am defining a function called try_login, this function has two inputs of type string, and the output is a boolean representing True if the
 user logins correctly or false otherwise. This is saved in the variable logged_in. Then in line two, I used the open function to open the csv file named 'users.csv' and used readlines function to access all the usernames and passwords. After that, I initialized the logged_in function as False and used a for loop to define 'uname' 
 and 'upass' in the file. If username and password are identical as in the users.csv file, the logged_in function becomes True, and it's the end of the program. 
+
 I defined a variable called 'attempts' with the initial value of 3, meaning that there are 3 chances for the user to enter password. When username or password are incorrect, the user will be given the chance, and the 'attempt' variable will be reduced. 
+
 If the password is still incorrect after 3 trials, the user will not be authorized into the program. Otherwise, they can enter the program.
 
 
@@ -199,8 +201,9 @@ were designed in order to fulfil the success criteria listed above.
 
 I first imported some python packages and functions defined in a document named my_lib to help with ceratin graphings, menu, and user validation process. After that, I designed the banner and menu using the functions imported. 
 
-First, I set the initial value of 
+First, I input the value of the menu as a list, displaying all the features that the user may need, including deposit, withdrawal, balance checking, graph, conversion rates, address book, and learn more about the cryptocurrency. 
 
+I set the initial value of the variable option -1, which represents all the values that are not in the options. 
 
 ```.py
 
