@@ -77,6 +77,81 @@ Some main features of the product include: deposit and withdrawal, balance check
 | 6       | Create a test plan        | Have the code tested to see if it aligns with the success criteria and  has the described functionalities | 30min         | Sep 29                 | B         |
 | 7       | Create citation for codes | A complete citation on sources used throughout the development of the product                             | 20min         | Sep 29                 | C         |                                                                                                
 
+## Test Plan
+
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| Test No | Test Type                         | User input  | Expected output                                                          | Passed the test (Y/N) | Related success criteria                                  |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 1       | Upon starting the program, the    | -           | 1. Deposit                                                               | Y                     | -                                                         |
+|         | menu should pop up.               |             | 2. Withdraw                                                              |                       |                                                           |
+|         |                                   |             | 3. Balance                                                               |                       |                                                           |
+|         |                                   |             | 4. Graph                                                                 |                       |                                                           |
+|         |                                   |             | 5. Conversion rates                                                      |                       |                                                           |
+|         |                                   |             | 6. Address book                                                          |                       |                                                           |
+|         |                                   |             | 7. Learn more                                                            |                       |                                                           |
+|         |                                   |             | Enter an option(1-7):                                                    |                       |                                                           |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 2       | Check if the system gives         | Anything    | Enter an option(1-7):                                                    | Y                     | -                                                         |
+|         | feedback if the user enters       | else than   |                                                                          |                       |                                                           |
+|         | incorrect value                   | 1-7         |                                                                          |                       |                                                           |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 3       | Check if the deposit function     | '1'         | Enter amount to deposit:                                                 | Y                     | 3.The electronic ledger allows to                         |
+|         | is working.                       |             |                                                                          |                       | enter, withdraw and record transactions.                  |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 4       | Check if user can deposit money   | the amount  | Saved                                                                    | Y                     | 3.The electronic ledger allows to                         |
+|         | successfully                      | to deposit  |                                                                          |                       | enter, withdraw and record transactions.                  |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 5       | Check if the withdraw function    | '2'         | Enter amount to withdraw:                                                | Y                     | 3.The electronic ledger allows to                         |
+|         | is working.                       |             |                                                                          |                       | enter, withdraw and record transactions.                  |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 6       | Check if user can withdraw money  | the amount  | Please don't forget the receipt.                                         | Y                     | 3.The electronic ledger allows to                         |
+|         | successfully                      | to withdraw |                                                                          |                       | enter, withdraw and record transactions.                  |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 7       | Ckeck if the balance function     | '3'         | Your balance is ¥(balance)                                               | Y                     | 3.The electronic ledger allows to                         |
+|         | is working                        |             |                                                                          |                       | enter, withdraw and record transactions.                  |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 8       | Check if the graph function       | '4'         | Deposits   ▦*deposits(deposits)                                          | Y                     | 4.The electronic ledger shows the past                    |
+|         | is working                        |             | Withdraws  ▦*withdraws(withdraws)                                        |                       | transaction records (deposition, withdrawal, etc)         |
+|         |                                   |             | Total transactions: (len(data))                                          |                       | in tables or graphs.                                      |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 9       | Check if the conversion rates     | '5'         | Please choose what currency you want to convert to, USD, EUR or JPY:     | Y                     | 5.The electronic ledger shows the real time               |
+|         | function is working               |             |                                                                          |                       | conversion rates from the cryptocurrency to other         |
+|         |                                   |             |                                                                          |                       | major currencies in the world (yen, usd, eur).            |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 10      | Check if the output for each      | currency    | Please check the conversion rate right now on                            | Y                     | 5.The electronic ledger shows the real time               |
+|         | currency is correct               | type        | https://www.google.com/finance/quote/XMR-(currency type) and enter here: |                       | conversion rates from the cryptocurrency to other         |
+|         |                                   |             |                                                                          |                       | major currencies in the world (yen, usd, eur).            |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 11      | Check if the calculation is       | the amount  | (amount) XMR is (amount_2) (Currency_type)                               | Y                     | 5.The electronic ledger shows the real time               |
+|         | correct                           | of currency |                                                                          |                       | conversion rates from the cryptocurrency to other         |
+|         |                                   |             |                                                                          |                       | major currencies in the world (yen, usd, eur).            |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 12      | Check if the address              | '6'         | 1. Check addresses                                                       | Y                     | 6.The electronic ledger has an address book to            |
+|         | book submenu pops up              |             | 2. Add address                                                           |                       | make it more convenient to send money and reduce          |
+|         | correctly                         |             | 3. Delete address                                                        |                       | errors when typing in address manually (edit and delete). |
+|         |                                   |             | Enter an option(1-3):                                                    |                       |                                                           |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 13      | Check if the addresses can be     | '1'         | all the addresses in address_book.csv                                    | Y                     | 6.The electronic ledger has an address book to            |
+|         | displayed correctly               |             |                                                                          |                       | make it more convenient to send money and reduce          |
+|         |                                   |             |                                                                          |                       | errors when typing in address manually (edit and delete). |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 14      | Check if address can be added     | '2'         | Please enter the address:                                                | Y                     | 6.The electronic ledger has an address book to            |
+|         |                                   |             | Please enter the description:                                            |                       | make it more convenient to send money and reduce          |
+|         |                                   |             |                                                                          |                       | errors when typing in address manually (edit and delete). |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 15      | Check if address can be deleted   | '3'         | Please enter the number of the line you want to delete:                  | Y                     | 6.The electronic ledger has an address book to            |
+|         |                                   |             |                                                                          |                       | make it more convenient to send money and reduce          |
+|         |                                   |             |                                                                          |                       | errors when typing in address manually (edit and delete). |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 16      | Check if the system gives         | >row        | Invalid input. Please enter a valid number.                              | Y                     | 6.The electronic ledger has an address book to            |
+|         | feedback if the user enters       |             |                                                                          |                       | make it more convenient to send money and reduce          |
+|         | incorrect values                  |             |                                                                          |                       | errors when typing in address manually (edit and delete). |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+| 17      | Check if the system prints        | '7'         | monero_intro.csv                                                         | Y                     | 2.The electronic ledger display the basic description     |
+|         | the introduction to the currency  |             |                                                                          |                       | of the cyrptocurrency selected.                           |
+|         | correctly                         |             |                                                                          |                       |                                                           |
++---------+-----------------------------------+-------------+--------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------+
+
 # Criteria C: Development
 
 ## Login system
@@ -126,6 +201,42 @@ else:
 
 ```
 
+## My lib
+
+```.py
+def banner_maker(msg: str, space: int, symbol: str) -> str:
+    # predefine variables we will need
+    width = len(msg) + 2 * space + 2
+    height = 5
+    banner = ""
+    end_code = "\033[00m"
+    green = "\33[0;92m"
+    # border-line
+    border_line = f"{symbol}" * width
+    # middle-line
+    middle_line = f"{symbol}" + " " * (width - 2) + f"{symbol}"
+    # msg_line
+    spaces = " " * space
+    msg_line = f"{symbol}{spaces}{green}{msg}{end_code}{spaces}{symbol}"
+    banner = f"{border_line}\n{middle_line}\n{msg_line}\n{middle_line}\n{border_line}"
+
+    return banner
+
+
+def print_menu(menu):
+    for i in range(len(menu)):
+        print(f"{i + 1}. {menu[i]}")
+
+
+def validate_int_user(msg,menu):
+    option=input(msg)
+    while not option.isdigit():
+        print("Error")
+        print_menu(menu)
+        option=input(msg)
+    return int(option)
+
+```
 
 
 ## ATM machine
