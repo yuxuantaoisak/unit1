@@ -203,7 +203,19 @@ I first imported some python packages and functions defined in a document named 
 
 First, I input the value of the menu as a list, displaying all the features that the user may need, including deposit, withdrawal, balance checking, graph, conversion rates, address book, and learn more about the cryptocurrency. 
 
-I set the initial value of the variable option -1, which represents all the values that are not in the options. 
+I set the initial value of the variable option as -1, which represents all the values that are not in the options so that it satisfies the conditions of the while loop next line. The number of option that the user inputs will be verified by the function validate_int_user. 
+
+When the value of the variable option is 1, the user will be asked to enter the amount to deposit in which the value will be saved in the variable msg_deposit, while the validate_int_user function will verify the amount. Using the imported datetime package, the date will be recorded in the date variable. Finally, using the writelines() function, the data and amount of deposit will be written in the atm csv file in a new line. The message "Saved." will be returned to the user as feedback.
+
+When the value of the variable option is 2, similarly, the user will be asked to enter the amount to withdraw in which the value will be saved in the variable msg_withdraw, while the validate_int_user function will verify the amount. Using the imported datetime package, the date will be recorded in the date variable. Finally, using the writelines() function, the data and amount of withdrawal will be written in the atm csv file in a new line. The message "Please don't forget your receipt." will be returned to the user as feedback.
+
+When the value of the variable option is 3, the open function will open the atm csv file, and the readlines() function will read all lines. The for loop in the following line adds up all the amount stored in the file, including positive ones(deposit) and negative ones(withdrawal), which is the balance that will be printed using the banner function.
+
+When the value of the variable option is 4, I initialized two functions, in_money and out_money with the initial value of 0. I used open function to open the atm csv file and readlines() function to read all lines. The int function will first make sure that the amount is an integer, then I used a for loop to identify the amount in the file. An if function was then used to identify whether the amount is positive or negative. If the amount is positive, the amount will be added to the in_money variable; if it's negative, the amount will be multiplied by -1 to make it positive and added to the out_money variable. After these operations were done, the two variables will be floor divided and squares were used to represent the variables. A squre represents roughly 1000 units. Finally, the graph will be printed. 
+
+When the value of the variable option is 5, I used a while true loop. I defined the currency_type function as the user input, as they can be either Yen, US Dollar or Euro, and I used the upper() funciton to make sure that the input will be translated into upper case. If the input is USD, the website that contains real time conversion rates(stored in the variable rate) will be printed since it's always fluctuating, and the user will be asked to input the amount of cryptocurrency they want to check which will be stored in the variable int_amount. The two variables will be multiplied and the result will be printed, as the while loop is stopped by break function. The same procedure applies to two other currencies. When the user inputs none of these currency, they will be asked to reenter, which is the feedback.
+
+When the value of the variable option is 6, a submenu will be printed which includes the basic features of the address book: check, add and delete address. I set the initial value of the variable option as -1, which represents all the values that are not in the options so that it satisfies the conditions of the while loop next line. The number of option that the user inputs will be verified by the function validate_int_user. If the option is 1, the open function will open the address book csv file and the for function was used to print all the lines. If the option is 2, the open function will open the address book csv file and the user will be asked to input the address and the description of it, which are stored respectively in the variable msg_address and msg_notes. Two variables will be integrated into one variable called address, and stored into the address book csv file using the writelines() function. If the option is 3, the address book csv file will be read using the padas plugin which is a file reader. The address book will be first printed with index in front of each line. Then, the try block was used as a test for the following lines.
 
 ```.py
 
@@ -283,6 +295,7 @@ if option==4:#graph of deposits and withdraw
 
 
 if option==5:
+
     while True:
 
         currency_type=input("Please choose what currency you want to convert to, USD, EUR or JPY: ").upper()
@@ -312,7 +325,7 @@ if option==6:
 
         second_menu=["Check addresses","Add address","Delete address"]
         print_menu(second_menu)
-        option=-1  # any number not in the options
+        option=-1  
         while option not in [1,2,3]:
             option=validate_int_user(msg="Enter an option(1-3): ", menu=menu)
 
