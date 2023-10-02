@@ -410,4 +410,6 @@ if option==7:  #learn more about the cryptocurrency
 
 Sources:
 https://www.w3schools.com/python/pandas/default.asp
+
+
 https://www.geeksforgeeks.org/how-to-use-while-true-in-python/
