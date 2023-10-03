@@ -8,7 +8,7 @@ Tseten Lama, the client, is a local trader who is interested in the emerging mar
 
 There is no existing product that meets the needs of Tseten, so he needs someone to develop a product that is specifically made for the purposes listed above for him to make his life easier. 
 
-The developer, Yuxuan Tao, agrees to develop a product that satisfies these needs and fulfills the requirements, allowing the client to organize and keep track of his spendings and the statistics about the currency of his choice. 
+The developer, Yuxuan Tao, agrees to develop a product that satisfies these needs and fulfills the requirements, allowing the client to organize and keep track of his spendings, access the useful statistics about the currency of his choice. 
 
 Apart from these requirements, Tseten Lama is open to explore a cryptocurrency selected by the developer.
 
