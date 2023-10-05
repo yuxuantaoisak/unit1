@@ -490,3 +490,6 @@ https://www.programiz.com/python-programming/methods/string/strip
 
 
 https://www.analyticsvidhya.com/blog/2021/08/python-tutorial-working-with-csv-file-for-data-science/
+
+
+https://www.scaler.com/topics/how-to-create-a-csv-file-in-python/
