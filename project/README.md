@@ -484,3 +484,9 @@ https://www.w3schools.com/python/pandas/default.asp
 
 
 https://www.geeksforgeeks.org/how-to-use-while-true-in-python/
+
+
+https://www.programiz.com/python-programming/methods/string/strip
+
+
+https://www.analyticsvidhya.com/blog/2021/08/python-tutorial-working-with-csv-file-for-data-science/
