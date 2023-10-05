@@ -1,6 +1,6 @@
 import datetime
 
-from my_lib import banner_maker,print_menu,validate_int_user
+from my_lib import banner_maker, print_menu, validate_int_user
 
 import registration
 
