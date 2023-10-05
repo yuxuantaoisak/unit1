@@ -16,14 +16,16 @@ Apart from these requirements, Tseten Lama is open to explore a cryptocurrency s
 
 Design statement: I will design and make an **electronic ledger** for a client who is **Tseten Lama**. The **electronic ledger** will be **a software that helps the client to withdraw and transfer money and track spendings** and is constructed using the software **PyCharm**. It will take **four weeks** to make and will be evaluated according to the criteria **A, B, and C**.
 
-Introduction to the cryptocurrency:
+### Introduction to the cryptocurrency:
+
+
 Monero (XMR) is a privacy-focused cryptocurrency that was created in 2014. It is designed to provide enhanced privacy and anonymity for its users compared to other cryptocurrencies like Bitcoin. Monero achieves this privacy through various cryptographic techniques, including Stealth Addresses, Ring Signature, and Ring CT. This ensures that the sender, the receiver and the amount of transaction are all hidden by default. 
 
 
 “What Is Monero (XMR)?” Getmonero.Org, The Monero Project, www.getmonero.org/get-started/what-is-monero/. Accessed 1 Oct. 2023. 
 
 
-### Design Statement(rationale):
+## Design Statement(rationale):
 
 The product will be developed on the software PyCharm, which is a Python IDE with a range of essential tools that allow developers to customize and add the desired functions. It has numerous plug-ins and shortcuts that help with the developer’s productivity. This chosen software will effectively help the developer to achieve the goals that the client set and shorten the time needed compare to other tools. 
 Some main features of the product include: deposit and withdrawal, balance checking, currency conversion, and address book. With these functions, the product allows the client to transfer and withdraw his currencies online, and the record is automatically saved. Additionally, the client's need of safety is perfectly met by the registration and login system which hides each user's personal information. The client can also check the transaction history at ease, without the need to manually record transactions. Additionally, the built-in currency converter allows the client to convert the cryptocurrency to major currencies with the reference of real-time conversion rates, making it easy when trading. The address book makes it impossible to make mistakes when transferring money to certain addresses. These features in the product solve the client’s problem perfectly, as it manages all the records and has all the necessary functionalities that the client needs. 
@@ -119,7 +121,10 @@ The test plan gives an idea of how the program will be tested as well as an over
 
 | Test No | Test Type                                                                | User input               | Expected output                                                                                                           | Passed the test (Y/N) | Related success criteria                                                                                                                                    |
 |---------|--------------------------------------------------------------------------|--------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1       | Upon starting the program,  the menu should pop up.                      | -                        | 1. Deposit 2. Withdraw 3. Balance 4. Graph 5. Conversion rates 6. Address book 7. Learn more Enter an option(1-7):        | Y                     | -                                                                                                                                                           |
+| 1       | Upon starting the program,  the menu should pop up.                      | -                        | Welcome to the program
+1. Register
+2. Already have an account? Log in
+Please enter your choice:         | Y                     | -                                                                                                                                                           |
 | 2       | Check if the system gives feedback if the user enters incorrect value    | Anything  else than  1-7 | Enter an option(1-7):                                                                                                     | Y                     | -                                                                                                                                                           |
 | 3       | Check if the deposit function is working.                                | '1'                      | Enter amount to deposit:                                                                                                  | Y                     | 3.The electronic ledger allows to  enter, withdraw and record transactions.                                                                                 |
 | 4       | Check if user can deposit  money successfully                            | the amount to deposit    | Saved                                                                                                                     | Y                     | 3.The electronic ledger allows to  enter, withdraw and record transactions.                                                                                 |
@@ -480,16 +485,16 @@ if option == 7:  #learn more about the cryptocurrency
 ```
 
 Sources:
-https://www.w3schools.com/python/pandas/default.asp
+W2schools(2023) Pandas tutorial [Source code] https://www.w3schools.com/python/pandas/default.asp
 
 
-https://www.geeksforgeeks.org/how-to-use-while-true-in-python/
+nikhilaggarwal3(2023) How to use while True [Source code] https://www.geeksforgeeks.org/how-to-use-while-true-in-python/
 
 
-https://www.programiz.com/python-programming/methods/string/strip
+Programiz(2023) Python string strip() [Source code] https://www.programiz.com/python-programming/methods/string/strip
 
 
-https://www.analyticsvidhya.com/blog/2021/08/python-tutorial-working-with-csv-file-for-data-science/
+Harika Bonthu (2023) How to read and write with csv files [Source code] https://www.analyticsvidhya.com/blog/2021/08/python-tutorial-working-with-csv-file-for-data-science/
 
 
-https://www.scaler.com/topics/how-to-create-a-csv-file-in-python/
+Namanjeet Singh (2022) How to create a csv file in python [Source code] https://www.scaler.com/topics/how-to-create-a-csv-file-in-python/
