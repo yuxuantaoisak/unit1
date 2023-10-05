@@ -144,6 +144,7 @@ In this program, I started with defining the function registration(). This funct
 
 ```.py
 
+
 def registration(uname:str, upass:str):
 
     with open('users.csv', mode='r') as f:
@@ -176,6 +177,7 @@ while True:
         break
     else:
         print("Invalid choice. Please retry.")
+
 
 ```
 
