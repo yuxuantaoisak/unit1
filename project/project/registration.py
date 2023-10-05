@@ -19,7 +19,7 @@ def registration(uname, upass):
 while True:
     print("Welcome to the program")
     print("1. Register")
-    print("2. Already a user? Log in")
+    print("2. Already have an account? Log in")
     choice = input("Please enter your choice: ")
     if choice == '1':
         username = input("Please create a username: ")
