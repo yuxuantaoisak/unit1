@@ -149,36 +149,39 @@ If the password is still incorrect after 3 trials, the user will not be authoriz
 
 
 ```.py
-def try_login(name:str,password:str):
-    with open("project/users.csv", mode='r') as f:
-        data=f.readlines()
-    logged_in=False
+
+
+def try_login(name:str, password:str):
+    with open("users.csv", mode='r') as f: #project/
+        data = f.readlines()
+    logged_in = False
     for line in data:
         uname=line.split(",")[0]
         upass=line.split(",")[1].strip()
 
-        if uname==name and upass==password:
-            logged_in=True
+        if uname == name and upass == password:
+            logged_in = True
             break
     return logged_in
 
-attempts=3
-name=input("Please enter your username: ")
-password=input("Please enter your password: ")
-result=try_login(name=name,password=password)
+attempts = 3
+name = input("Please enter your username: ")
+password = input("Please enter your password: ")
+result = try_login(name=name, password=password)
 
-while result==False and attempts>0:
-    name=input("[Error] Please enter your username: ")
-    password=input("Please enter your password: ")
-    result=try_login(name=name,password=password)
-    attempts-=1
+while result == False and attempts>0:
+    name = input("[Error] Please enter your username: ")
+    password = input("Please enter your password: ")
+    result = try_login(name=name, password=password)
+    attempts -= 1
 
-if result==False:
+if result == False:
     print("You are not authorized. Exiting")
     exit(1)  #finish the program
 
 else:
-    print("Welcome")
+    current_user=name
+    print("Welcome", current_user)
 
 
 ```
