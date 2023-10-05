@@ -12,7 +12,7 @@ import csv
 import pandas as pd
 
 
-msg = banner_maker(msg="Welcome to ATM", symbol="¥", space=50)
+msg = banner_maker(msg="Welcome to Monero", symbol="¥", space=50)
 print(msg)
 
 menu=["Deposit", "Withdraw", "Balance", "Graph", "Conversion rates", "Address book", "Learn more"]
