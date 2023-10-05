@@ -134,6 +134,53 @@ The test plan gives an idea of how the program will be tested as well as an over
 
 # Criteria C: Development
 
+
+## Registration system
+
+When building a system that protects user's important data, it's good to have a feature that allows new users to register/create their accounts. 
+
+In this program, I started with defining the function registration(). This function has two string inputs, and the output is string as well. In the beginning of the program, it will first read the users csv file and store all usernames into a variable called unamelist and all passwords into a variable called upasslist. Then I used an if statement to specify the conditions. If the username already exists(uname can be found in unamelist variable), the system will tell the user to choose another username since it's already taken. If both the username and password can be found in the user csv file, which means the account has been registered before, the system will tell the user to login. Otherwise, the system will write the username and password chosen by the user into the csv file.  
+
+
+```.py
+
+def registration(uname:str, upass:str):
+
+    with open('users.csv', mode='r') as f:
+        data = f.readlines()
+        unamelist = [line.strip().split(',')[0] for line in data]
+        upasslist = [line.strip().split(',')[1] for line in data]
+
+        if uname in unamelist and upass not in upasslist:
+            print("Username already exists. Please choose another one.")
+        elif uname in unamelist and upass in upasslist:
+            print("The account already exists. Please go to login page.")
+        else:
+            with open('users.csv', mode='a') as f:
+                line = f"{uname},{upass}\n"
+                f.writelines(line)
+            print("Registration successful.")
+
+
+while True:
+    print("Welcome to the program")
+    print("1. Register")
+    print("2. Already a user? Log in")
+    choice = input("Please enter your choice: ")
+    if choice == '1':
+        username = input("Please create a username: ")
+        password = input("Please create a password: ")
+        registration(username, password)
+        break
+    elif choice == '2':
+        break
+    else:
+        print("Invalid choice. Please retry.")
+
+```
+
+
+
 ## Login system
 
 My client requires a system to protect the private data. I thought about using a login system to accomplish this requirement using a if condition and the open command to work with a csv file. 
