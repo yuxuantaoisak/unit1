@@ -82,6 +82,12 @@ Some main features of the product include: deposit and withdrawal, balance check
 **Fig. 5** This is the flow diagram for option 6 (address book) in atm. 
 
 
+<img width="852" alt="Screenshot 2023-10-05 at 11 52 08" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/60bb3bfa-b562-4f63-897f-5f83955662c6">
+
+
+**Fig. 6** This is the flow diagram for registration system
+
+
 
 
 
@@ -89,7 +95,7 @@ Some main features of the product include: deposit and withdrawal, balance check
 
 <img width="628" alt="Screenshot 2023-10-02 at 21 15 37" src="https://github.com/yuxuantaoisak/unit1/assets/144768397/30aa4600-e933-45aa-be16-88c953387035">
 
-**Fig. 6**
+**Fig. 7**
 
 
 
@@ -139,7 +145,7 @@ The test plan gives an idea of how the program will be tested as well as an over
 
 When building a system that protects user's important data, it's good to have a feature that allows new users to register/create their accounts. 
 
-In this program, I started with defining the function registration(). This function has two string inputs, and the output is string as well. In the beginning of the program, it will first read the users csv file and store all usernames into a variable called unamelist and all passwords into a variable called upasslist. Then I used an if statement to specify the conditions. If the username already exists(uname can be found in unamelist variable), the system will tell the user to choose another username since it's already taken. If both the username and password can be found in the user csv file, which means the account has been registered before, the system will tell the user to login. Otherwise, the system will write the username and password chosen by the user into the csv file.  
+In this program, I started with defining the function registration(). This function has two string inputs, and the output is string as well. As you can see in **Fig. 6**, in the beginning of the program, it will first read the users csv file and store all usernames into a variable called unamelist and all passwords into a variable called upasslist. Then I used an if statement to specify the conditions. If the username already exists(uname can be found in unamelist variable), the system will tell the user to choose another username since it's already taken. If both the username and password can be found in the user csv file, which means the account has been registered before, the system will tell the user to login. Otherwise, the system will write the username and password chosen by the user into the csv file.  
 
 
 ```.py
