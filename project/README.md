@@ -14,7 +14,7 @@ Apart from these requirements, Tseten Lama is open to explore a cryptocurrency s
 
 ## Proposed solution
 
-Design statement: I will design and make an **electronic ledger** for a client who is **Tseten Lama**. The **electronic ledger** will be **a software that helps the client to withdraw and transfer money and track spendings** and is constructed using the software **PyCharm**. It will take **four weeks** to make and will be evaluated according to the criteria **A, B, and C**.
+Design statement: I will design and make an **electronic ledger** for a client who is **Tseten Lama**. The **electronic ledger** will be **a software protected by the login system that helps the client to withdraw and transfer money and track spendings** and is constructed using the software **PyCharm**. It will take **four weeks** to make and will be evaluated according to the criteria **A, B, and C**.
 
 ### Introduction to the cryptocurrency:
 
